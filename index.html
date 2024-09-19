@@ -9,20 +9,29 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-    <title>Mirror • Text</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Mirror Text</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body class="flex">
-    <h1>reversify • <span class="rev">mirror</span> anything</h1>
-    <h5>
-      insert string to <span class="rev">mirror</span>, can be used for things
-      like <span class="rev">passwords</span>
-    </h5>
-    <div class="text&btn flex">
-      <input type="text" placeholder="Enter Search" autofocus />
-      <button></button>
-    </div><br>
-    <span class="chip">Copied</span>
-    <script src="main.js"></script>
+    <h1 class="heading">reversify • <span class="rev">reverse</span> anything</h1>
+    <p class="description">
+      insert string to <span class="rev">reverse</span>, can be used for things like <span class="rev">password</span>
+    </p>
+    <div class="flex">
+      <input
+        class="input-text"
+        type="text"
+        placeholder="Enter Text"
+        autofocus
+      />
+      <button class="btn-reverse flex">
+        <img src="./refresh-dot.png" alt="" srcset="" />
+      </button>
+    </div>
+    <span class="chip">copied</span>
+    <span class="theme">
+      <img src="./assets/images/cloudy.png" alt="" />
+    </span>
+    <script src="./js/main.js"></script>
   </body>
 </html>

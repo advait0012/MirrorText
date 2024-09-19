@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 40px;
+    width:40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    font-size: 3rem;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.heading::after{
+    content: "";
+    background-image: url("/assets/images/icon-hvNRE3Ne.png");
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.rev{
+    color:#2ecc71
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    font-family: "oswald";
+    background-color: #eee;
+}
+
+.description{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    letter-spacing: 1.3px;
+}
+
+div{
+    margin-bottom: 40px;
+}
+
+.input-text{
+    height: 80px;
+    width: 340px;
+    border-radius: 50px;
+    padding: 30px;
+    font-size: 2rem;
+    margin-right: 40px;
+    box-shadow: 10px 10px 10px black;
+    outline: none;
+    border: none;
+}
+
+.btn-reverse{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    box-shadow: 10px 10px 10px black;
+    cursor:pointer
+}
+
+.theme{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
