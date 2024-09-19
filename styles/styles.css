@@ -68,6 +68,8 @@ div{
     box-shadow: 10px 10px 10px black;
     outline: none;
     border: none;
+    font-family: "oswald";
+    letter-spacing: 3px;
 }
 
 .btn-reverse{
@@ -85,4 +87,17 @@ div{
     bottom: 2rem;
     right: 2rem;
     cursor: pointer;
+}
+.day{
+    background-color: #222;
+    color: #ddd;
+}
+
+.night{
+    background-color:#ddd;
+    color: #222;
+}
+
+.night .theme img{
+    content: url("/assets/images/cloudy.png");
 }
