@@ -1,103 +1,160 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("fonts.css");
+@import url("variables.css");
+@import url("utils.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img{
-    height: 40px;
-    width:40px;
+img {
+  height: 40px;
+  width: 40px;
 }
 
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: var(--mono);
+  background-color: var(--tints);
+  color: var(--shades);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:2rem
 }
 
-.heading{
-    font-size: 3rem;
-    margin-bottom: 40px;
-    letter-spacing: 4px;
-    font-weight: 400;
+input,button{
+  font-family: inherit;
 }
 
-.heading::after{
-    content: "";
-    background-image: url("/assets/images/icon-hvNRE3Ne.png");
-    position: absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+.theme {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
 }
 
-.rev{
-    color:#2ecc71
+.aside{
+  display: flex;
+  gap:1rem;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
-    font-family: "oswald";
-    background-color: #eee;
-}
-
-.description{
-    font-size: 1.2rem;
-    margin-bottom: 50px;
-    letter-spacing: 1.3px;
-}
-
-div{
-    margin-bottom: 40px;
-}
+/* .rev{
+  color: var(--accent);
+} */
 
 .input-text{
-    height: 80px;
-    width: 340px;
-    border-radius: 50px;
-    padding: 30px;
-    font-size: 2rem;
-    margin-right: 40px;
-    box-shadow: 10px 10px 10px black;
-    outline: none;
-    border: none;
-    font-family: "oswald";
-    letter-spacing: 3px;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  outline: 1px dashed black;
+  border: none;
 }
 
 .btn-reverse{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-    box-shadow: 10px 10px 10px black;
-    cursor:pointer
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  display: grid;
+  place-items: center;
 }
 
-.theme{
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    cursor: pointer;
+.description{
+  font-size: 0.8rem;
 }
-.day{
-    background-color: #222;
-    color: #ddd;
+.heading::after {
+  content: "";
+  background-image: url("/assets/images/icon-hvNRE3Ne.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
-.night{
-    background-color:#ddd;
-    color: #222;
+/* .heading {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+  font-weight: 400;
 }
 
-.night .theme img{
-    content: url("/assets/images/cloudy.png");
-}
+.heading::after {
+  content: "";
+  background-image: url("/assets/images/icon-hvNRE3Ne.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+} */
+
+/* .rev {
+  color: #2ecc71;
+}  */
+
+/* .description {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  letter-spacing: 1.3px;
+} */
+
+/* div {
+  margin-bottom: 40px;
+} */
+
+/* .input-text {
+  height: 80px;
+  width: 340px;
+  border-radius: 50px;
+  padding: 30px;
+  font-size: 2rem;
+  margin-right: 40px;
+  box-shadow: 10px 10px 10px black;
+  outline: none;
+  border: none;
+  font-family: "oswald";
+  letter-spacing: 3px;
+} */
+
+/* .btn-reverse {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  box-shadow: 10px 10px 10px black;
+  cursor: pointer;
+} */
+
+/* .day {
+  background-color: #222;
+  color: #ddd;
+} */
+
+/* .night {
+  background-color: #ddd;
+  color: #222;
+} */
+
+/* .night .theme img {
+  content: url("/assets/images/cloudy.png");
+} */
+
+/* .chip {
+  animation-name: fadeaway;
+} */
