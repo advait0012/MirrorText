@@ -2,6 +2,7 @@
 @import url("variables.css");
 @import url("utils.css");
 
+/* Resets */
 *,
 *::before,
 *::after {
@@ -10,151 +11,92 @@
   box-sizing: border-box;
 }
 
-img {
-  height: 40px;
-  width: 40px;
-}
-
+/* Generic */
 body {
+  font-family: var(--mono), monospace;
   min-height: 100vh;
   min-width: 100vw;
-  font-family: var(--mono);
-  background-color: var(--tints);
+  background: var(--tints);
   color: var(--shades);
+
+  border: 10px solid #33333312;
+
+  /* Layouts  */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap:2rem
+  gap: 2rem;
 }
 
-input,button{
+input,
+button {
   font-family: inherit;
 }
 
-.theme {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  cursor: pointer;
-}
-
-.aside{
-  display: flex;
-  gap:1rem;
-}
-
-/* .rev{
+kbd {
   color: var(--accent);
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* .heading::after {
+  content: "";
+  background-image: url("https://img.icons8.com/emoji/120/repeat-button-emoji.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 } */
 
-.input-text{
-  padding: 1rem;
-  border-radius: 1rem;
+.description {
   font-size: 1rem;
-  outline: 1px dashed black;
-  border: none;
 }
 
-.btn-reverse{
+/* Input Fields */
+.aside {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-text {
+  font-size: 1rem;
   padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: 1px dashed black;
+}
+
+.btn-reverse {
   cursor: pointer;
+  padding: 1rem;
   border-radius: 50%;
   border: none;
   display: grid;
   place-items: center;
 }
 
-.description{
-  font-size: 0.8rem;
-}
-.heading::after {
-  content: "";
-  background-image: url("/assets/images/icon-hvNRE3Ne.png");
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+.chip {
+  color: var(--accent);
+  visibility: hidden;
 }
 
-/* .heading {
-  font-size: 3rem;
-  margin-bottom: 40px;
-  letter-spacing: 4px;
-  font-weight: 400;
+.show {
+  visibility: visible;
 }
 
-.heading::after {
-  content: "";
-  background-image: url("/assets/images/icon-hvNRE3Ne.png");
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-} */
-
-/* .rev {
-  color: #2ecc71;
-}  */
-
-/* .description {
-  font-size: 1.2rem;
-  margin-bottom: 50px;
-  letter-spacing: 1.3px;
-} */
-
-/* div {
-  margin-bottom: 40px;
-} */
-
-/* .input-text {
-  height: 80px;
-  width: 340px;
-  border-radius: 50px;
-  padding: 30px;
-  font-size: 2rem;
-  margin-right: 40px;
-  box-shadow: 10px 10px 10px black;
-  outline: none;
-  border: none;
-  font-family: "oswald";
-  letter-spacing: 3px;
-} */
-
-/* .btn-reverse {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  box-shadow: 10px 10px 10px black;
+/* Theme Icon */
+.theme {
   cursor: pointer;
-} */
-
-/* .day {
-  background-color: #222;
-  color: #ddd;
-} */
-
-/* .night {
-  background-color: #ddd;
-  color: #222;
-} */
-
-/* .night .theme img {
-  content: url("/assets/images/cloudy.png");
-} */
-
-/* .chip {
-  animation-name: fadeaway;
-} */
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}

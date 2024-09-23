@@ -5,14 +5,14 @@
   --mono: "nanum";
 }
 
-@media (prefer-color-scheme: dark) {
+/* @media (prefer-color-scheme: dark) {
   :root {
     --shades: #eaeaea;
     --tints: #333333;
     --accent: #3469ec;
     --mono: "nanum";
   }
-}
+} */
 
 .dark-theme {
   --shades: #eaeaea;
